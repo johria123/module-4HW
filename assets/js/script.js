@@ -25,6 +25,7 @@ var questions = [
         options: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"],
         correctAnswer: "3. quotes"
     }
+         
 ];
 
 var currentQuestionIndex = 0;
@@ -39,7 +40,7 @@ function startQuiz() {
 
 function startTimer() {
     timerInterval = setInterval(function () {
-        timerDisplay.textContent = `Time left: ${timerSeconds} seconds`;
+        timerDisplay.textContent = `Time remaining: ${timerSeconds} seconds`;
 
         if (timerSeconds <= 0) {
             clearInterval(timerInterval);
@@ -84,11 +85,11 @@ function nextQuestion() {
         } else {
            
             clearInterval(timerInterval);
-            quizContainer.innerHTML = '<h1>Quiz Completed!</h1>';
+            quizContainer.innerHTML = '<h1>Quiz is Completed!</h1>';
         }
     } else {
        
-        alert('Please select an option!');
+        alert('you must select an option to proceed forward!');
     }
 }
 
