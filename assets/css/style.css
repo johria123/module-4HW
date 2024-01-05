@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcyan;
+    margin: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+#quiz-container {
+    max-width: 2000px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 60px;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+question-container {
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: pink;
+}
+
